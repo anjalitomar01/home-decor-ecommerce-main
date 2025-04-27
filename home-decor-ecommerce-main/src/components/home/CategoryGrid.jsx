@@ -4,22 +4,22 @@ import { Link } from 'react-router-dom';
 const categories = [
   {
     name: 'Furniture',
-    image: '/images/furniture-category.jpg',
+    image: '/images/furnitureCatgory.png',
     link: '/category/furniture'
   },
   {
     name: 'Lighting',
-    image: '/images/lighting-category.jpg',
+    image: '/images/lightingcat.png',
     link: '/category/lighting'
   },
   {
     name: 'Textiles',
-    image: '/images/textiles-category.jpg',
+    image: '/images/textilecat.png',
     link: '/category/textiles'
   },
   {
     name: 'Decor',
-    image: '/images/decor-category.jpg',
+    image: '/images/decorcat.png',
     link: '/category/decor'
   }
 ];
