@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { useAuth } from '../../contexts/AuthContext';
 import { useCart } from '../../contexts/CartContext';
+import TextilePage from '../home/categories/Textiles';
 
 const Navbar = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -38,9 +39,9 @@ const Navbar = () => {
         </Box>
         
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-          <Button component={Link} to="/category/furniture">Furniture</Button>
-          <Button component={Link} to="/category/lighting">Lighting</Button>
-          <Button component={Link} to="/category/textiles">Textiles</Button>
+          <Button component={Link} to="Furniture">Furniture</Button>
+          <Button component={Link} to="Lightning">Lighting</Button>
+          <Button component={Link} to="Textile">Textiles</Button>
           <Button component={Link} to="/category/decor">Decor</Button>
           
           <IconButton component={Link} to="/cart" color="inherit">
