@@ -230,7 +230,7 @@ const RegisterPage = () => {
                 <Link href="/login" variant="body2">
                   Already have an account? Sign Innnn
                 </Link>
-              </Box>
+              </Box> 
             </Form>
           )}
         </Formik>
