@@ -43,10 +43,66 @@ const HomePage = () => {
     {
       id: 4,
       name: 'Jhumar',
-      price: 129.99,
-      image: '/images/lamp.png',
+      price: 499,
+      image: '/images/Jhumar.png',
       shortDescription: 'Adjustable floor lamp with metal finish',
       category: 'lighting'
+    },
+    {
+      id: 4,
+      name: 'Curtains',
+      price: 199.99,
+      image: '/images/Curtains.png',
+      shortDescription: 'Adjustable floor lamp with metal finish',
+      category: 'Curtains'
+    },
+    {
+      id: 4,
+      name: 'Study Table',
+      price: 250,
+      image: '/images/StudyTable.png',
+      shortDescription: 'Adjustable floor lamp with metal finish',
+      category: 'Study Table'
+    },
+    {
+      id: 4,
+      name: 'Almirah',
+      price: 129.99,
+      image: '/images/Almirah.png',
+      shortDescription: 'Almirah for your modern home',
+      category: 'Almirah'
+    },
+    {
+      id: 4,
+      name: 'Temple',
+      price: 400.99,
+      image: '/images/Temple.png',
+      shortDescription: 'Elegant home temples for a peaceful and spiritual space.',
+      category: 'Temple'
+    },
+    {
+      id: 4,
+      name: 'Bed',
+      price: 120000.99,
+      image: '/images/Bed.png',
+      shortDescription: 'Elegant design for perfect sleep and comfort.',
+      category: 'Bed'
+    },
+    {
+      id: 4,
+      name: 'Mattress',
+      price: 10000.99,
+      image: '/images/Mattress.png',
+      shortDescription: 'Soft, supportive, and built for better sleep',
+      category: 'mattress'
+    },
+    {
+      id: 4,
+      name: 'Sofa',
+      price: 45000.99,
+      image: '/images/Sofa.png',
+      shortDescription: 'Stylish, cozy, and made for everyday comfort',
+      category: 'Sofa'
     },
   ];
   //corousel
@@ -61,13 +117,17 @@ const HomePage = () => {
     {
       // title: "Timeless Furniture",
       // subtitle: "Find the perfect piece for your living room",
-      image: "/images/corousel4.png",
+      image: "/images/corousel5.png",
       // ctaText: "Shop Furniture",
       ctaLink: "/category/furniture"
     },
     {
       image: "/images/corousel3.png",
       ctaLink: "/category/lighting"
+    },
+    {
+      image: "/images/Eid.png",
+      ctaLink: "/category/all"
     }
   ];
 
