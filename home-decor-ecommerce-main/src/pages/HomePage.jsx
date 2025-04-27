@@ -9,7 +9,8 @@ const HomePage = () => {
       id: 1,
       name: 'Modern Ceramic Vase',
       price: 45.99,
-      image: '/images/vase.jpg',
+      // image: '/images/vase.jpg',
+      image: '/images/image copy.png',
       shortDescription: 'Handcrafted ceramic vase with minimalist design',
       category: 'decor'
     },
@@ -17,7 +18,8 @@ const HomePage = () => {
       id: 2,
       name: 'Wooden Coffee Table',
       price: 249.99,
-      image: '/images/coffee-table.jpg',
+      // image: '/images/coffee-table.jpg',
+      image: '/images/image copy 2.png',
       shortDescription: 'Solid oak coffee table with clean lines',
       category: 'furniture'
     },
@@ -25,7 +27,8 @@ const HomePage = () => {
       id: 3,
       name: 'Linen Throw Blanket',
       price: 79.99,
-      image: '/images/blanket.jpg',
+      // image: '/images/blanket.jpg',
+      image: '/images/image1.png',
       shortDescription: 'Soft linen blanket in neutral tones',
       category: 'textiles'
     },
@@ -33,21 +36,45 @@ const HomePage = () => {
       id: 4,
       name: 'Industrial Floor Lamp',
       price: 129.99,
-      image: '/images/lamp.jpg',
+      image: '/images/lamp.png',
+      shortDescription: 'Adjustable floor lamp with metal finish',
+      category: 'lighting'
+    },
+    {
+      id: 4,
+      name: 'Jhumar',
+      price: 129.99,
+      image: '/images/lamp.png',
       shortDescription: 'Adjustable floor lamp with metal finish',
       category: 'lighting'
     },
   ];
+  //corousel
+  const banners = [
+    {
+      // title: "Elevate Your Space",
+      // subtitle: "Discover handcrafted home decor pieces",
+      image: "/images/corousel1.png",
+      // ctaText: "Shop Now",
+      ctaLink: "/category/all"
+    },
+    {
+      // title: "Timeless Furniture",
+      // subtitle: "Find the perfect piece for your living room",
+      image: "/images/corousel4.png",
+      // ctaText: "Shop Furniture",
+      ctaLink: "/category/furniture"
+    },
+    {
+      image: "/images/corousel3.png",
+      ctaLink: "/category/lighting"
+    }
+  ];
 
   return (
     <Box>
-      <HeroBanner 
-        title="Elevate Your Space"
-        subtitle="Discover handcrafted home decor pieces"
-        image="/images/hero-banner.jpg"
-        ctaText="Shop Now"
-        ctaLink="/category/all"
-      />
+       {/* hero banner */}
+       <HeroBanner banners={banners} />
       
       <Container maxWidth="lg" sx={{ py: 4 }}>
         <Typography variant="h4" component="h2" gutterBottom sx={{ textAlign: 'center', mb: 4 }}>
