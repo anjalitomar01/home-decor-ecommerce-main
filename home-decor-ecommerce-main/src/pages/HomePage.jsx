@@ -40,6 +40,14 @@ const HomePage = () => {
       shortDescription: 'Adjustable floor lamp with metal finish',
       category: 'lighting'
     },
+    {
+      id: 4,
+      name: 'Jhumar',
+      price: 129.99,
+      image: '/images/lamp.png',
+      shortDescription: 'Adjustable floor lamp with metal finish',
+      category: 'lighting'
+    },
   ];
   //corousel
   const banners = [
@@ -58,24 +66,13 @@ const HomePage = () => {
       ctaLink: "/category/furniture"
     },
     {
-      // title: "Lighting Inspiration",
-      // subtitle: "Brighten up your home with our unique lighting",
       image: "/images/corousel3.png",
-      // ctaText: "Shop Lighting",
       ctaLink: "/category/lighting"
     }
   ];
 
   return (
     <Box>
-      {/* <HeroBanner 
-        title="Elevate Your Space"
-        subtitle="Discover handcrafted home decor pieces"
-        image="/images/hero-banner.jpg"
-        ctaText="Shop Now"
-        ctaLink="/category/all"
-      />
-       */}
        {/* hero banner */}
        <HeroBanner banners={banners} />
       
