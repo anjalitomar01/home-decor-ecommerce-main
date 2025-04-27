@@ -2,6 +2,8 @@ import { Container, Grid, Typography, Box } from '@mui/material';
 import ProductCard from '../components/product/ProductCard';
 import HeroBanner from '../components/home/HeroBanner';
 import CategoryGrid from '../components/home/CategoryGrid';
+import Home from '../pages/Home';
+
 
 const HomePage = () => {
   const featuredProducts = [
@@ -115,10 +117,8 @@ const HomePage = () => {
       ctaLink: "/category/all"
     },
     {
-      // title: "Timeless Furniture",
-      // subtitle: "Find the perfect piece for your living room",
+      
       image: "/images/corousel5.png",
-      // ctaText: "Shop Furniture",
       ctaLink: "/category/furniture"
     },
     {
@@ -135,6 +135,12 @@ const HomePage = () => {
     <Box>
        {/* hero banner */}
        <HeroBanner banners={banners} />
+
+  {/* Image below hero banner */}
+       <Box sx={{ textAlign: 'center', my: 4 }}>
+    <img src="/images/EMI.png" alt="Your Description" style={{ maxWidth: '100%', height: 'auto' }} />
+  </Box>
+
       
       <Container maxWidth="lg" sx={{ py: 4 }}>
         <Typography variant="h4" component="h2" gutterBottom sx={{ textAlign: 'center', mb: 4 }}>
@@ -148,6 +154,8 @@ const HomePage = () => {
           ))}
         </Grid>
       </Container>
+      <Home/>
+
 
       <CategoryGrid />
     </Box>
