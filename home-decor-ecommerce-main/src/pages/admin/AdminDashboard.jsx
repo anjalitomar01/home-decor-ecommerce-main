@@ -99,7 +99,8 @@ const AdminDashboard = () => {
               <CardMedia
                 component="img"
                 height="160"
-                image="/images/user-card.jpg"
+                // image="/images/user-card.jpg"
+                image='../image.png'
                 alt="User card"
               />
               <CardContent>
