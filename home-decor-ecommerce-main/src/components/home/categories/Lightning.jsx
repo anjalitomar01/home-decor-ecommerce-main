@@ -1,5 +1,5 @@
 import React from 'react';
-
+import HeroBanner from '../HeroBanner';
 const Lightning = () => {
   const fabrics = [
     {
@@ -27,10 +27,34 @@ const Lightning = () => {
       image: "https://via.placeholder.com/300"
     }
   ];
+  const banners = [
+    {
+      // title: "Elevate Your Space",
+      // subtitle: "Discover handcrafted home decor pieces",
+      image: "/images/corousel1.png",
+      // ctaText: "Shop Now",
+      ctaLink: "/category/all"
+    },
+    {
+      
+      image: "/images/corousel5.png",
+      ctaLink: "/category/furniture"
+    },
+    {
+      image: "/images/corousel3.png",
+      ctaLink: "/category/lighting"
+    },
+    {
+      image: "/images/Eid.png",
+      ctaLink: "/category/all"
+    }
+  ];
 
   return (
     <div style={styles.container}>
-      <h2 style={styles.heading}>Explore Our Premium Textile Collection</h2>
+       {/* hero banner */}
+       <HeroBanner banners={banners} />
+      <h2 style={styles.heading}>Explore Our Premium Lightning Collection</h2>
       <div style={styles.productGrid}>
         {fabrics.map((fabric, index) => (
           <div key={index} style={styles.productCard}>

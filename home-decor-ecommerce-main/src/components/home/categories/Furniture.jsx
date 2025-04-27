@@ -1,5 +1,5 @@
 import React from 'react';
-
+import HeroBanner from '../HeroBanner';
 const Furniture = () => {
   const fabrics = [
     {
@@ -27,10 +27,35 @@ const Furniture = () => {
       image: "https://via.placeholder.com/300"
     }
   ];
+  const banners = [
+    {
+      // title: "Elevate Your Space",
+      // subtitle: "Discover handcrafted home decor pieces",
+      image: "/images/Furniture1.png",
+      // ctaText: "Shop Now",
+      ctaLink: "/category/all"
+    },
+    {
+      
+      image: "/images/furniture2.png",
+      ctaLink: "/category/furniture"
+    },
+    {
+      image: "/images/furniture3.png",
+      ctaLink: "/category/lighting"
+    },
+    {
+      image: "/images/furniture4.png",
+      ctaLink: "/category/all"
+    }
+  ];
+
 
   return (
     <div style={styles.container}>
-      <h2 style={styles.heading}>Explore Our Premium Textile Collection</h2>
+       {/* hero banner */}
+       <HeroBanner banners={banners} />
+      <h2 style={styles.heading}>Explore Our Premium Furniture Collection</h2>
       <div style={styles.productGrid}>
         {fabrics.map((fabric, index) => (
           <div key={index} style={styles.productCard}>
