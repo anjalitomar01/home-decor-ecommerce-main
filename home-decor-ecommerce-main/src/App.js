@@ -15,6 +15,10 @@ import AdminDashboard from './pages/admin/AdminDashboard';
 import NotFoundPage from './pages/NotFoundPage';
 import Navbar from './components/common/Navbar';
 import Footer from './components/common/Footer';
+import Textiles from './components/home/categories/Textiles';
+import Furniture from './components/home/categories/Furniture';
+import Lightning from './components/home/categories/Lightning';
+
 
 const theme = createTheme({
   palette: {
@@ -62,8 +66,13 @@ function App() {
               <Route path="/login" element={<LoginPage />} />
               <Route path="/register" element={<RegisterPage />} />
               <Route path="/account" element={<AccountPage />} />
-              <Route path="/admin" element={<AdminDashboard />} />
+              <Route path="/admin" element={<AdminDashboard />} />              
               <Route path="*" element={<NotFoundPage />} />
+              <Route path="/Textile" element={<Textiles/>} />
+              <Route path="/Furniture" element={<Furniture/>} />
+              <Route path="/Lightning" element={<Lightning/>} />
+            
+          
             </Routes>
             <Footer />
           </CartProvider>
