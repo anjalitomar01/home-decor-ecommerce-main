@@ -7,25 +7,25 @@ const Furniture = () => {
     {
       name: "Table Lamp",
       description: "Fiesta Resin Table Lamp",
-      price: "800",
+      price: "Rs 800",
       image: "/images/light5.png"
     },
     {
       name: "Metal Table Lamp",
       description: "Brass Antique Diamond Cut Glass and Pure Brass Royal Table Lamp",
-      price: "5850",
+      price: "Rs 5850",
       image: "/images/light6.png"
     },
     {
       name: "Floor Lamps",
       description: "Beige Wooden Floor Lamp with Shelf Natural Jute Shade",
-      price: "2999",
+      price: "Rs 2999",
       image: "/images/light7.png"
     },
     {
       name: "Study Lamps",
       description: "Mosaic Multi Color Glass Table Lamp With Black Base",
-      price: "599",
+      price: "Rs 599",
       image: "/images/light8.png"
     }
   ];
@@ -55,25 +55,25 @@ const Furniture = () => {
     {
       name: "Chandeliers",
       description: "Gold Finish Iron Glass Chandeliers",
-      price: "$10000",
+      price: "Rs10000",
       image: "/images/light9.png"
     },
     {
       name: "Pendant Lights",
       description: "Miera Glass Pendant Light( Smokey Grey )",
-      price: "2999",
+      price: "Rs 2999",
       image: "/images/light10.png"
     },
     {
       name: "Hanging Light",
       description: "Elegant Crystal Drops Hanging Lights",
-      price: "20000",
+      price: "Rs 20000",
       image: "/images/light11.png"
     },
     {
       name: "Decorative light",
       description: "Elephant Antique Brass Finish Metal Table Lamp",
-      price: "6999",
+      price: "Rs 6999",
       image: "/images/light12.png"
     }
   ];
