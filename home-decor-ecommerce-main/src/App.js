@@ -18,7 +18,8 @@ import Footer from './components/common/Footer';
 import Textiles from './components/home/categories/Textiles';
 import Furniture from './components/home/categories/Furniture';
 import Lightning from './components/home/categories/Lightning';
-import Decor from './components/home/categories/Decor'
+import Decor from './components/home/categories/Decor';
+import TableLamp from './components/home/Lightning/TableLamp';
 
 
 const theme = createTheme({
@@ -73,6 +74,7 @@ function App() {
               <Route path="/Furniture" element={<Furniture/>} />
               <Route path="/Lightning" element={<Lightning/>} />
               <Route path="/Decor" element={<Decor/>} />
+              <Route path="/TableLamp" element={<TableLamp/>} /> 
           
             </Routes>
             <Footer />
