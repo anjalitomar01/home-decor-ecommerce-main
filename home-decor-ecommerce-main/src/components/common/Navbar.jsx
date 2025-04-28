@@ -42,7 +42,7 @@ const Navbar = () => {
           <Button component={Link} to="Furniture">Furniture</Button>
           <Button component={Link} to="Lightning">Lighting</Button>
           <Button component={Link} to="Textile">Textiles</Button>
-          <Button component={Link} to="/category/decor">Decor</Button>
+          <Button component={Link} to="Decor">Decor</Button>
           
           <IconButton component={Link} to="/cart" color="inherit">
             <Badge badgeContent={cartItems.length} color="primary">
