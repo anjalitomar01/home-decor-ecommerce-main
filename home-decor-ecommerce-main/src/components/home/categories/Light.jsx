@@ -18,9 +18,9 @@ const categories = [
 const TopPicks = () => {
   return (
     <div style={{ textAlign: "center", padding: "2rem" }}>
-      <h1 style={{ fontSize: "2rem", marginBottom: "0.5rem" }}>Home Furnishings</h1>
+      <h1 style={{ fontSize: "2rem", marginBottom: "0.5rem" }}>Home Lighting</h1>
       <p style={{ marginBottom: "2rem", color: "#666" }}>
-      Beautiful furniture, beautiful memories — create your perfect home with us.
+      Light up your life — find the perfect glow for every corner of your home.
       </p>
       <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "2rem" }}>
         {categories.map((category, index) => (

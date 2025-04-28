@@ -84,7 +84,7 @@ const Furniture = () => {
        {/* hero banner */}
        <HeroBanner banners={banners} />
        <Light/>
-      <h2 style={styles.heading}>Explore Our Premium Furniture Collection</h2>
+      <h2 style={styles.heading}>Explore Our Premium Lighting Collection</h2>
       <div style={styles.productGrid}>
         {fabrics.map((fabric, index) => (
           <div key={index} style={styles.productCard}>
