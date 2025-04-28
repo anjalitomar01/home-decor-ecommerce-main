@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { useAuth } from '../../contexts/AuthContext';
 import { useCart } from '../../contexts/CartContext';
-import TextilePage from '../home/categories/Textiles';
+
 
 const Navbar = () => {
   const [anchorEl, setAnchorEl] = useState(null);
