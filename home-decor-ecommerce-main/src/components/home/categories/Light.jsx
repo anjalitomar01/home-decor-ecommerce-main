@@ -2,12 +2,21 @@ import React from "react";
 import { Link } from "react-router-dom"; 
 
 const categories = [
+<<<<<<< HEAD
   { name: "Table Lamps", image: "/images/light13.png", Link: "/TableLamp"},
   { name: "Floor Lamps", image: "/images/light14.png", link: "/category/floorlamps" },
   { name: "Study Lamps", image: "/images/light15.png", link: "/category/studylamps" },
   { name: "Tripod Lamps", image: "/images/light16.png", link: "/category/tripod-lamps" },
   { name: "Lamp Shades", image: "/images/light17.png", link: "/category/lamp-shades" },
   { name: "Spot Lights", image: "/images/light18.png", link: "/category/spot-lights" },
+=======
+  { name: "Table Lamps", image: "/images/light13.png", link: "/TableLamp" },
+  { name: "Floor Lamps", image: "/images/light14.png", link: "/floorlamps" },
+  { name: "Study Lamps", image: "/images/light15.png", link: "/studylamps" },
+  { name: "Tripod Lamps", image: "/images/light16.png", link: "/tripodlamps" },
+  { name: "Lamp Shades", image: "/images/light17.png", link: "/lampshades" },
+  { name: "Spot Lights", image: "/images/light18.png", link: "/spotlights" },
+>>>>>>> f102addb3dd3754163815e9e09adac7e40a29156
   { name: "Chandeliers", image: "/images/light19.png", link: "/category/chandeliers" },
   { name: "Hanging Lights", image: "/images/light20.png", link: "/category/hanging-lights" },
   { name: "Wall Lights", image: "/images/light21.png", link: "/category/wall-lights" },
