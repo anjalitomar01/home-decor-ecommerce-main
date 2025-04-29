@@ -133,9 +133,9 @@ const styles = {
   },
   productGrid: {
     display: 'flex',
-    justifyContent: 'space-around',  // Distribute space between cards
+    justifyContent: 'space-around',  
     gap: '1rem',
-    flexWrap: 'wrap',  // Allow wrapping if screen is small
+    flexWrap: 'wrap',  
   },
   productCard: {
     backgroundColor: '#fff',
@@ -143,9 +143,9 @@ const styles = {
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
     borderRadius: '8px',
     textAlign: 'center',
-    width: '23%',  // Set each card width to take about 1/4th of the container
+    width: '23%',  
     height:'50%',
-    marginBottom: '2rem',  // Niche space bhi
+    marginBottom: '2rem',  
     transition: 'transform 0.3s ease, box-shadow 0.3s ease',
   },
   productImage: {

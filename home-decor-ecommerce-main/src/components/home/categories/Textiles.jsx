@@ -1,179 +1,142 @@
-import React from 'react';
+
+import { Container, Grid, Typography, Box } from '@mui/material';
+import ProductCard from '../../product/ProductCard';
 import HeroBanner from '../HeroBanner';
-import Fur from './Fur';
-import {  Box } from '@mui/material';
-const Furniture = () => {
-  const fabrics = [
+import Homedecor from '../categories/Homedecor';
+
+
+const HomePage = () => {
+  const featuredProducts = [
     {
-      name: "Cotton Fabric",
-      description: "Soft, breathable cotton fabric for a variety of clothing.",
-      price: "$15 per meter",
-      image: "/images/Bed.png"
+      id: 1,
+      name: 'Modern Ceramic Vase',
+      price: 45.99,
+      // image: '/images/vase.jpg',
+      image: '/images/image copy.png',
+      shortDescription: 'Handcrafted ceramic vase with minimalist design',
+      category: 'decor'
     },
     {
-      name: "Linen Fabric",
-      description: "Perfect for warm weather, light and airy linen fabric.",
-      price: "$25 per meter",
-      image: "/images/fursofa.png"
+      id: 2,
+      name: 'Wooden Coffee Table',
+      price: 249.99,
+      // image: '/images/coffee-table.jpg',
+      image: '/images/image copy 2.png',
+      shortDescription: 'Solid oak coffee table with clean lines',
+      category: 'furniture'
     },
     {
-      name: "Silk Fabric",
-      description: "Luxurious silk fabric for elegant clothing and accessories.",
-      price: "$50 per meter",
-      image: "/images/frunituretable.png"
+      id: 3,
+      name: 'Linen Throw Blanket',
+      price: 79.99,
+      // image: '/images/blanket.jpg',
+      image: '/images/image1.png',
+      shortDescription: 'Soft linen blanket in neutral tones',
+      category: 'textiles'
     },
     {
-      name: "Wool Fabric",
-      description: "Soft, warm wool fabric for winter clothing.",
-      price: "$40 per meter",
-      image: "/images/cusions.png"
-    }
+      id: 4,
+      name: 'Industrial Floor Lamp',
+      price: 129.99,
+      image: '/images/lamp.png',
+      shortDescription: 'Adjustable floor lamp with metal finish',
+      category: 'lighting'
+    },
+    {
+      id: 5,
+      name: 'Jhumar',
+      price: 499,
+      image: '/images/Jhumar.png',
+      shortDescription: 'Adjustable floor lamp with metal finish',
+      category: 'lighting'
+    },
+    {
+      id: 6,
+      name: 'Curtains',
+      price: 199.99,
+      image: '/images/Curtains.png',
+      shortDescription: 'Adjustable floor lamp with metal finish',
+      category: 'Curtains'
+    },
+    {
+      id: 7,
+      name: 'Study Table',
+      price: 250,
+      image: '/images/StudyTable.png',
+      shortDescription: 'Adjustable floor lamp with metal finish',
+      category: 'Study Table'
+    },
+    {
+      id: 8,
+      name: 'Almirah',
+      price: 129.99,
+      image: '/images/Almirah.png',
+      shortDescription: 'Almirah for your modern home',
+      category: 'Almirah'
+    },
+    
   ];
+  //corousel
   const banners = [
     {
       // title: "Elevate Your Space",
       // subtitle: "Discover handcrafted home decor pieces",
-      image: "/images/textile1.png",
+      image: "/images/corousel1.png",
       // ctaText: "Shop Now",
       ctaLink: "/category/all"
     },
     {
       
-      image: "/images/textile2.png",
+      image: "/images/corousel5.png",
       ctaLink: "/category/furniture"
     },
     {
-      image: "/images/textile3.png",
+      image: "/images/corousel3.png",
       ctaLink: "/category/lighting"
     },
     {
-      image: "/images/textile4.png",
+      image: "/images/Eid.png",
       ctaLink: "/category/all"
     }
   ];
-  const furniture = [
-    {
-      name: "Cotton Fabric",
-      description: "Soft, breathable cotton fabric for a variety of clothing.",
-      price: "$15 per meter",
-      image: "/images/fur1.png"
-    },
-    {
-      name: "Linen Fabric",
-      description: "Perfect for warm weather, light and airy linen fabric.",
-      price: "$25 per meter",
-      image: "/images/fur2.png"
-    },
-    {
-      name: "Silk Fabric",
-      description: "Luxurious silk fabric for elegant clothing and accessories.",
-      price: "$50 per meter",
-      image: "/images/fur3.png"
-    },
-    {
-      name: "Wool Fabric",
-      description: "Soft, warm wool fabric for winter clothing.",
-      price: "$40 per meter",
-      image: "/images/fur4.png"
-    }
-  ];
-
 
   return (
-    <div style={styles.container}>
+    <Box>
        {/* hero banner */}
        <HeroBanner banners={banners} />
-       <Fur/>
-      <h2 style={styles.heading}>Explore Our Premium Furniture Collection</h2>
-      <div style={styles.productGrid}>
-        {fabrics.map((fabric, index) => (
-          <div key={index} style={styles.productCard}>
-            <img src={fabric.image} alt={fabric.name} style={styles.productImage} />
-            <div style={styles.cardContent}>
-              <h4>{fabric.name}</h4>
-              <p>{fabric.description}</p>
-              <p style={styles.price}>{fabric.price}</p>
-              <button style={styles.addToCartBtn}>Add to Cart</button>
-            </div>
-          </div>
-        ))}
-      </div>
+        <Homedecor/>    
+      <Container maxWidth="lg" sx={{ py: 4 }}>
+        <Typography variant="h4" component="h2" gutterBottom sx={{ textAlign: 'center', mb: 4 }}>
+        Explore Our Premium Furniture Collection
+        </Typography>
+        <Grid container spacing={4}>
+          {featuredProducts.map((product) => (
+            <Grid item key={product.id} xs={12} sm={6} md={4} lg={3}>
+              <ProductCard product={product} />
+            </Grid>
+          ))}
+        </Grid>
+      </Container>
       
-     {/* Image below hero banner */}
-     <Box sx={{ textAlign: 'center', my: 4 }}>
+ {/*  hero banner */}
+ <Box sx={{ textAlign: 'center', my: 4 }}>
     <img src="/images/furnituresale.png" alt="Your Description" style={{ maxWidth: '100%', height: 'auto' }} />
-  </Box>
+  </Box>  
 
-  <div style={styles.productGrid}>
-        {furniture.map((furniture, index) => (
-          <div key={index} style={styles.productCard}>
-            <img src={furniture.image} alt={furniture.name} style={styles.productImage} />
-            <div style={styles.cardContent}>
-              <h4>{furniture.name}</h4>
-              <p>{furniture.description}</p>
-              <p style={styles.price}>{furniture.price}</p>
-              <button style={styles.addToCartBtn}>Add to Cart</button>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
+<Container maxWidth="lg" sx={{ py: 4 }}>
+        <Typography variant="h4" component="h2" gutterBottom sx={{ textAlign: 'center', mb: 4 }}>
+        Explore Our Premium Furniture Collection
+        </Typography>
+        <Grid container spacing={4}>
+          {featuredProducts.map((product) => (
+            <Grid item key={product.id} xs={12} sm={6} md={4} lg={3}>
+              <ProductCard product={product} />
+            </Grid>
+          ))}
+        </Grid>
+      </Container>
+    </Box>
   );
 };
 
-// Inline Styles
-const styles = {
-  container: {
-    padding: '1rem',
-    textAlign: 'center',
-  },
-  heading: {
-    fontSize: '2rem',
-    marginBottom: '1rem',
-  },
-  productGrid: {
-    display: 'flex',
-    justifyContent: 'space-around',  
-    gap: '1rem',
-    flexWrap: 'wrap',  
-  },
-  productCard: {
-    backgroundColor: '#fff',
-    padding: '1rem',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-    borderRadius: '8px',
-    textAlign: 'center',
-    width: '23%',  
-    height:'50%',
-    marginBottom: '2rem',  
-    transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-  },
-  productImage: {
-    width: '100%',
-    height: '200px',
-    objectFit:'cover',
-    borderRadius: '8px',
-  },
-  cardContent: {
-    paddingTop: '0.5rem',
-  },
-  price: {
-    fontWeight: 'bold',
-    marginTop: '1rem',
-    fontSize: '1.2rem',
-  },
-  addToCartBtn: {
-    backgroundColor: '#333',
-    color: '#fff',
-    padding: '0.8rem 1.5rem',
-    fontSize: '1rem',
-    border: 'none',
-    cursor: 'pointer',
-    marginTop: '1rem',
-    transition: 'background-color 0.3s ease',
-  },
-};
-
-
-export default Furniture;
-
+export default HomePage;
