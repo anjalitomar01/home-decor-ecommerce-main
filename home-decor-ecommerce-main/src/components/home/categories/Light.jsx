@@ -1,9 +1,8 @@
 import React from "react";
-
-import { Link } from "react-router-dom"; // ✅ Link import karna mat bhoolna
+import { Link } from "react-router-dom"; 
 
 const categories = [
-  { name: "Table Lamps", image: "/images/light13.png", link: "/Lightning/TableLamp" },
+  { name: "Table Lamps", image: "/images/light13.png", Link: "/TableLamp"},
   { name: "Floor Lamps", image: "/images/light14.png", link: "/category/floorlamps" },
   { name: "Study Lamps", image: "/images/light15.png", link: "/category/studylamps" },
   { name: "Tripod Lamps", image: "/images/light16.png", link: "/category/tripod-lamps" },
@@ -15,7 +14,7 @@ const categories = [
   { name: "Gate Lights", image: "/images/light22.png", link: "/category/gate-lights" },
   { name: "Pendant Lights", image: "/images/light23.png", link: "/category/pendant-lights" },
   { name: "Decorative Lights", image: "/images/light24.png", link: "/category/decorative-lights" },
-];
+ ];
 
 const TopPicks = () => {
   return (
