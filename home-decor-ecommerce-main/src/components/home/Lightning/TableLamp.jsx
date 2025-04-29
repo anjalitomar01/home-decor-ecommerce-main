@@ -1,5 +1,4 @@
 import React from 'react';
-
 const tableLamps = [
   {
     name: "Fiesta Resin Table Lamp",
@@ -30,6 +29,8 @@ const tableLamps = [
 const TableLamp = () => {
   return (
     <div style={styles.container}>
+     
+
       <h1 style={styles.heading}>Table Lamps Collection</h1>
       <div style={styles.productGrid}>
         {tableLamps.map((lamp, index) => (

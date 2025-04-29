@@ -33,21 +33,21 @@ const Furniture = () => {
     {
       // title: "Elevate Your Space",
       // subtitle: "Discover handcrafted home decor pieces",
-      image: "/images/Furniture1.png",
+      image: "/images/textile1.png",
       // ctaText: "Shop Now",
       ctaLink: "/category/all"
     },
     {
       
-      image: "/images/furniture2.png",
+      image: "/images/textile2.png",
       ctaLink: "/category/furniture"
     },
     {
-      image: "/images/furniture3.png",
+      image: "/images/textile3.png",
       ctaLink: "/category/lighting"
     },
     {
-      image: "/images/furniture4.png",
+      image: "/images/textile4.png",
       ctaLink: "/category/all"
     }
   ];

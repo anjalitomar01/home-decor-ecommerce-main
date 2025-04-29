@@ -1,80 +1,81 @@
 import React from 'react';
 import HeroBanner from '../HeroBanner';
-import Fur from './Fur';
+import Homedecor from './Homedecor';
 import {  Box } from '@mui/material';
+
 const Furniture = () => {
   const fabrics = [
     {
-      name: "Cotton Fabric",
-      description: "Soft, breathable cotton fabric for a variety of clothing.",
-      price: "$15 per meter",
-      image: "/images/Bed.png"
+      name: "Sofa Arm",
+      description: "Bridger Premium Solid Wood Sofa Arm Tray/Dining Mat, Teak Finish",
+      price: "Rs 699",
+      image: "/images/decor17.png"
     },
     {
-      name: "Linen Fabric",
-      description: "Perfect for warm weather, light and airy linen fabric.",
-      price: "$25 per meter",
-      image: "/images/fursofa.png"
+      name: "Table Decor",
+      description: "Sleek Cage Console Table Decor",
+      price: "Rs 1799",
+      image: "/images/decor18.png"
     },
     {
-      name: "Silk Fabric",
-      description: "Luxurious silk fabric for elegant clothing and accessories.",
-      price: "$50 per meter",
-      image: "/images/frunituretable.png"
+      name: "Glass Vase",
+      description: "Verdant Glass Vase- Set of 2",
+      price: "Rs 1584",
+      image: "/images/decor19.png"
     },
     {
-      name: "Wool Fabric",
-      description: "Soft, warm wool fabric for winter clothing.",
-      price: "$40 per meter",
-      image: "/images/cusions.png"
+      name: "Wall Mounted Shelf",
+      description: "Hedwig Wooden Wall Mounted Shelf With 4 Hanging Metal Hooks, Multipurpose Wall Shelf For Living Room/Bedroom",
+      price: "Rs 500",
+      image: "/images/decor20.png"
     }
   ];
   const banners = [
     {
       // title: "Elevate Your Space",
       // subtitle: "Discover handcrafted home decor pieces",
-      image: "/images/Furniture1.png",
+      image: "/images/Decor1.png",
       // ctaText: "Shop Now",
       ctaLink: "/category/all"
     },
     {
       
-      image: "/images/furniture2.png",
+      image: "/images/Decor2.png",
       ctaLink: "/category/furniture"
     },
     {
-      image: "/images/furniture3.png",
+      image: "/images/Decor3.png",
       ctaLink: "/category/lighting"
     },
     {
-      image: "/images/furniture4.png",
+      image: "/images/Decor4.png",
       ctaLink: "/category/all"
     }
   ];
   const furniture = [
     {
-      name: "Cotton Fabric",
-      description: "Soft, breathable cotton fabric for a variety of clothing.",
-      price: "$15 per meter",
-      image: "/images/fur1.png"
+      name: "Wall Paintings",
+      description: "Aksha Pichwai Cow Painting Wall Frame",
+      price: "Rs 399",
+      image: "/images/decor21.png"
     },
     {
-      name: "Linen Fabric",
-      description: "Perfect for warm weather, light and airy linen fabric.",
-      price: "$25 per meter",
-      image: "/images/fur2.png"
+      name: "Pot",
+      description: "Bloomify Ceramic Pot With Artificial Flowers",
+      price: "Rs 299",
+      image: "/images/decor22.png"
     },
     {
-      name: "Silk Fabric",
-      description: "Luxurious silk fabric for elegant clothing and accessories.",
-      price: "$50 per meter",
-      image: "/images/fur3.png"
+      name: "Wall Clocks",
+      description: "Time to Define Your Wall Story",
+      price: "Rs 100",
+      image: "/images/decor23.png"
     },
     {
-      name: "Wool Fabric",
-      description: "Soft, warm wool fabric for winter clothing.",
-      price: "$40 per meter",
-      image: "/images/fur4.png"
+      name: "Photo Frames",
+      description: "Ripple Photo Collage",
+      price: "Rs 3999",
+      image: "/images/decor24.png"
     }
   ];
 
@@ -83,8 +84,8 @@ const Furniture = () => {
     <div style={styles.container}>
        {/* hero banner */}
        <HeroBanner banners={banners} />
-       <Fur/>
-      <h2 style={styles.heading}>Explore Our Premium Furniture Collection</h2>
+       <Homedecor/>
+      <h2 style={styles.heading}>Discover Elegance with Our Exclusive Home Décor Collection</h2>
       <div style={styles.productGrid}>
         {fabrics.map((fabric, index) => (
           <div key={index} style={styles.productCard}>
