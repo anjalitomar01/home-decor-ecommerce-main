@@ -31,7 +31,7 @@ const TableLamp = () => {
     <div style={styles.container}>
      
 
-      <h1 style={styles.heading}>Table Lamps Collection  ("आपके घर की रौनक, हमारे टेबल लैंप्स।")</h1>
+      <h1 style={styles.heading}>Table Lamps Collection</h1>
       <p>Let every glow be a reflection of love, comfort, and style – only at Home Decor</p>
       <div style={styles.productGrid}>
         {tableLamps.map((lamp, index) => (
