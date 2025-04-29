@@ -10,19 +10,19 @@ const tableLamps = [
     name: "Brass Diamond Table Lamp",
     description: "Elegant brass and glass diamond cut lamp.",
     price: "Rs 5850",
-    image: "/images/light6.png",
+    image: "/images/t1.png",
   },
   {
     name: "Classic Wooden Lamp",
     description: "Premium wooden table lamp with jute shade.",
     price: "Rs 2999",
-    image: "/images/light7.png",
+    image: "/images/t2.png",
   },
   {
     name: "Colorful Mosaic Lamp",
     description: "Handmade multi-color mosaic glass lamp.",
     price: "Rs 599",
-    image: "/images/light8.png",
+    image: "/images/t3.png",
   },
 ];
 
@@ -31,7 +31,8 @@ const TableLamp = () => {
     <div style={styles.container}>
      
 
-      <h1 style={styles.heading}>Table Lamps Collection</h1>
+      <h1 style={styles.heading}>Table Lamps Collection  ("आपके घर की रौनक, हमारे टेबल लैंप्स।")</h1>
+      <p>Let every glow be a reflection of love, comfort, and style – only at Home Decor</p>
       <div style={styles.productGrid}>
         {tableLamps.map((lamp, index) => (
           <div key={index} style={styles.productCard}>
