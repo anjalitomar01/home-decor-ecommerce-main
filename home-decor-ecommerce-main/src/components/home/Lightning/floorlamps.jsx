@@ -30,9 +30,9 @@ const floorlamps = [
 const Floorlamps = () => {
   return (
     <div style={styles.container}>
-      <h1 style={styles.heading}>Table Lamps Collection</h1>
+      <h1 style={styles.heading}>floor Lamps Collection</h1>
       <div style={styles.productGrid}>
-        {tableLamps.map((lamp, index) => (
+        {floorlamps.map((lamp, index) => (
           <div key={index} style={styles.productCard}>
             <img src={lamp.image} alt={lamp.name} style={styles.productImage} />
             <div style={styles.cardContent}>

@@ -20,8 +20,11 @@ import Furniture from './components/home/categories/Furniture';
 import Lightning from './components/home/categories/Lightning';
 import Decor from './components/home/categories/Decor';
 import TableLamp from './components/home/Lightning/TableLamp';
-
-
+import Floorlamps from './components/home/Lightning/floorlamps'
+import Studylamps from './components/home/Lightning/studylamps'
+import Tripodlamps from './components/home/Lightning/tripodlamps'
+import Lampshades from './components/home/Lightning/lampshades';
+import Spotlights from './components/home/Lightning/spotlights'
 const theme = createTheme({
   palette: {
     primary: {
@@ -75,7 +78,11 @@ function App() {
               <Route path="/Lightning" element={<Lightning/>} />
               <Route path="/Decor" element={<Decor/>} />
               <Route path="/TableLamp" element={<TableLamp/>} /> 
-          
+              <Route path="/floorlamps" element={<Floorlamps/>} />
+              <Route path="/Studylamps" element={<Studylamps/>} />
+              <Route path="/tripodlamps" element={<Tripodlamps/>} />
+              <Route path="/Lampshades" element={<Lampshades/>} />
+              <Route path="/spotlights" element={<Spotlights/>} />
             </Routes>
             <Footer />
           </CartProvider>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const studylamps = [
+const tripodlamps = [
   {
     name: "Fiesta Resin Table Lamp",
     description: "Beautiful resin table lamp for cozy spaces.",
@@ -27,12 +27,12 @@ const studylamps = [
   },
 ];
 
-const Studylamps = () => {
+const Tripodlamps = () => {
   return (
     <div style={styles.container}>
-      <h1 style={styles.heading}>Study Lamps Collection</h1>
+      <h1 style={styles.heading}>Tripod  Lamps Collection</h1>
       <div style={styles.productGrid}>
-        {studylamps.map((lamp, index) => (
+        {tripodlamps.map((lamp, index) => (
           <div key={index} style={styles.productCard}>
             <img src={lamp.image} alt={lamp.name} style={styles.productImage} />
             <div style={styles.cardContent}>
@@ -98,4 +98,4 @@ const styles = {
   },
 };
 
-export default Studylamps;
+export default Tripodlamps;
